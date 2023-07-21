@@ -1,0 +1,6 @@
+plus = int(input("Введите число при сложении "))
+times = int(input("Введите число при умножении "))
+for x1 in range (plus):
+    for x2 in range(times):
+        if x1+x2==plus and x1*x2 ==times:
+            print(x1,x2)

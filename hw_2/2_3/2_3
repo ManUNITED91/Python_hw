@@ -1,0 +1,5 @@
+num = int(input('Введите число '))
+t = 1
+while num > t:
+    print (t)
+    t *=2
