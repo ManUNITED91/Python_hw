@@ -1,0 +1,17 @@
+n = int(input("Введите количество моенток "))
+countSide1 = 0
+countSide0 = 0
+import random
+for i in range(n):
+    side = random.randint(0, 1)
+    if side == 0:
+        countSide0 +=1
+    else:
+        countSide1 +=1
+if countSide1 > countSide0:
+    print(f'минимальное количество монеток,которые нужно перевернуть = {countSide0}')
+elif countSide0 > countSide1:
+    print(f'минимальное количество монеток,которые нужно перевернуть = {countSide1}')
+else:
+    print('количество перевнутых монеток на разные стороны равны')
+    
